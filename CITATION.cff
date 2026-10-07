@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived results, please cite the article below."
+title: "fedids-mia-audit: membership inference audit of federated intrusion detectors"
+type: software
+license: MIT
+repository-code: "https://github.com/carolpontara/fedids-mia-audit"
+version: "1.0.0"
+date-released: "2026-10-07"
+authors:
+  - given-names: Ana Caroline Silva
+    family-names: Pontara
+    affiliation: "São Paulo State University (UNESP)"
+  - given-names: Fernanda Mara
+    family-names: Cruz
+  - given-names: Kelton Augusto Pontara
+    family-names: da Costa
+    affiliation: "São Paulo State University (UNESP)"
+  - given-names: Thiago José
+    family-names: Lucas
+    affiliation: "São Paulo State University (UNESP)"
+  - given-names: João Paulo
+    family-names: Papa
+    affiliation: "São Paulo State University (UNESP)"
+  - given-names: Danilo
+    family-names: Colombo
+    affiliation: "Petrobras CENPES"
+  - given-names: Anderson Raymundo
+    family-names: Avila
+    affiliation: "Institut National de la Recherche Scientifique (INRS)"
+preferred-citation:
+  type: article
+  title: "Membership Inference Attacks in Federated Intrusion Detection: A Systematic Review and an Auditing Framework"
+  journal: "Computers & Security"
+  status: submitted
+  year: 2026
+  authors:
+    - given-names: Ana Caroline Silva
+      family-names: Pontara
+    - given-names: Fernanda Mara
+      family-names: Cruz
+    - given-names: Kelton Augusto Pontara
+      family-names: da Costa
+    - given-names: Thiago José
+      family-names: Lucas
+    - given-names: João Paulo
+      family-names: Papa
+    - given-names: Danilo
+      family-names: Colombo
+    - given-names: Anderson Raymundo
+      family-names: Avila
