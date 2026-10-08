@@ -112,7 +112,7 @@ def rounds_fig(R, out):
 
 def class_client_fig(C, K, classes, out):
     dss = [d for d in DS_NAME if d in C.dataset.unique()]
-    fig, axes = plt.subplots(2, len(dss), figsize=(3.4 * len(dss), 4.0), squeeze=False)
+    fig, axes = plt.subplots(2, len(dss), figsize=(3.4 * len(dss), 4.4), squeeze=False)
     for j, ds in enumerate(dss):
         c = C[(C.dataset == ds) & (C["round"] == 100) & (C.attack == "loss")]
         g = c.groupby(["class", "alpha"])[["tpr@0.05", "fpr@0.05"]].mean().unstack() * 100
@@ -128,7 +128,6 @@ def class_client_fig(C, K, classes, out):
         ax.set_xticks(x, [classes[ds][i] for i in g.index], rotation=35, ha="right", fontsize=6)
         ax.set_ylabel("Records flagged (%)")
         ax.set_title(f"{DS_NAME[ds]}: per class, Loss, 5% global FPR")
-        ax.legend(fontsize=5.5, frameon=False)
         k_ = K[(K.dataset == ds) & (K["round"] == 100) & (K.attack == "loss")]
         g2 = k_.assign(ex=100 * (k_["tpr@0.05"] - k_["class_matched_fpr@0.05"])).groupby(
             ["alpha", "client", "agg"]).agg(n=("n_train", "first"), ex=("ex", "mean")).reset_index()
@@ -141,8 +140,12 @@ def class_client_fig(C, K, classes, out):
         ax.set_xlabel("Training records held by the client")
         ax.set_ylabel("Excess exposure (pp)")
         ax.set_title(f"{DS_NAME[ds]}: per client, all partitions")
-        ax.legend(fontsize=5.5, frameon=False, ncol=2)
-    fig.tight_layout()
+    fig.tight_layout(h_pad=2.6)
+    top = axes[0][0].get_position()
+    bottom = axes[1][0].get_position()
+    for row, y in ((0, top.y1 + 0.075), (1, bottom.y0 - 0.115)):
+        handles, labels = axes[row][0].get_legend_handles_labels()
+        fig.legend(handles, labels, fontsize=6, frameon=False, ncol=4, loc="center", bbox_to_anchor=(0.5, y))
     fig.savefig(os.path.join(out, "fig_fed_class_client.pdf"), bbox_inches="tight")
     plt.close(fig)
 
