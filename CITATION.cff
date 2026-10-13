@@ -12,9 +12,9 @@ authors:
     affiliation: "São Paulo State University (UNESP)"
   - given-names: Fernanda Mara
     family-names: Cruz
-  - given-names: Kelton Augusto Pontara
-    family-names: da Costa
-    affiliation: "São Paulo State University (UNESP)"
+  - given-names: Natali Vitória Nogueira Rabelo
+    family-names: Ampúdia
+    affiliation: "São Paulo State College of Technology (FATEC)"
   - given-names: Thiago José
     family-names: Lucas
     affiliation: "São Paulo State University (UNESP)"
@@ -27,6 +27,9 @@ authors:
   - given-names: Anderson Raymundo
     family-names: Avila
     affiliation: "Institut National de la Recherche Scientifique (INRS)"
+  - given-names: Kelton Augusto Pontara
+    family-names: da Costa
+    affiliation: "São Paulo State University (UNESP)"
 preferred-citation:
   type: article
   title: "Membership Inference Attacks in Federated Intrusion Detection: A Systematic Review and an Auditing Framework"
@@ -38,8 +41,8 @@ preferred-citation:
       family-names: Pontara
     - given-names: Fernanda Mara
       family-names: Cruz
-    - given-names: Kelton Augusto Pontara
-      family-names: da Costa
+    - given-names: Natali Vitória Nogueira Rabelo
+      family-names: Ampúdia
     - given-names: Thiago José
       family-names: Lucas
     - given-names: João Paulo
@@ -48,3 +51,5 @@ preferred-citation:
       family-names: Colombo
     - given-names: Anderson Raymundo
       family-names: Avila
+    - given-names: Kelton Augusto Pontara
+      family-names: da Costa
