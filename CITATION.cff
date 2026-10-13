@@ -12,6 +12,9 @@ authors:
     affiliation: "São Paulo State University (UNESP)"
   - given-names: Fernanda Mara
     family-names: Cruz
+  - given-names: Natali Vitória Nogueira Rabelo
+    family-names: Ampúdia
+    affiliation: "São Paulo State College of Technology (FATEC)"
   - given-names: Thiago José
     family-names: Lucas
     affiliation: "São Paulo State University (UNESP)"
@@ -38,6 +41,8 @@ preferred-citation:
       family-names: Pontara
     - given-names: Fernanda Mara
       family-names: Cruz
+    - given-names: Natali Vitória Nogueira Rabelo
+      family-names: Ampúdia
     - given-names: Thiago José
       family-names: Lucas
     - given-names: João Paulo

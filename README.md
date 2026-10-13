@@ -5,7 +5,7 @@ Membership inference audit of federated intrusion detectors, built with Flower a
 This repository has the code, the fixed client partitions and the derived results of the executed
 audit reported in:
 
-> A. C. S. Pontara, F. M. Cruz, T. J. Lucas, J. P. Papa, D. Colombo, A. R. Avila,
+> A. C. S. Pontara, F. M. Cruz, N. V. N. R. Ampúdia, T. J. Lucas, J. P. Papa, D. Colombo, A. R. Avila,
 > K. A. P. da Costa. *Membership Inference Attacks in Federated Intrusion Detection: A Systematic Review
 > and an Auditing Framework*. Submitted to Computers & Security, 2026.
 
